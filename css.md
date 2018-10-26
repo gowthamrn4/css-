@@ -54,4 +54,11 @@ color:  red;<br>
 text-align:  center;<br>
 color:  red;<br>
 }</p>
+<p>You can also specify that only specific HTML elements should be affected by a class.</p>
+<p>In the example below, only </p><p> elements with class=“center” will be center-aligned:</p>
+<p><em><strong>Example:</strong></em></p>
+<p>p.center {<br>
+text-align:  center;<br>
+color:  red;<br>
+}</p>
 
