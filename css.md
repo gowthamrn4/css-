@@ -205,4 +205,5 @@ color:  orange;
 <pre><code>&lt;h1 style="background-color:DodgerBlue;"&gt;Hello World&lt;/h1&gt;  
 &lt;p style="background-color:Tomato;"&gt;Lorem ipsum...&lt;/p&gt;
 </code></pre>
+<p><img src="https://css-tricks.com/wp-content/uploads/2011/05/fullwidthbars.png" alt="enter image description here"></p>
 
