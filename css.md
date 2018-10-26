@@ -92,4 +92,29 @@ color:  red;<br>
 text-align:  center;<br>
 color:  red;<br>
 }</p>
+<h2 id="css-comments">CSS Comments</h2>
+<p>Comments are used to explain the code, and may help when you edit the source code at a later date.</p>
+<p>Comments are ignored by browsers.</p>
+<p>A CSS comment starts with /* and ends with */. Comments can also span multiple lines:</p>
+<p>p {<br>
+color:  red;<br>
+/* This is a single-line comment */<br>
+text-align:  center;<br>
+}</p>
+<p>/* This is<br>
+a multi-line<br>
+comment */</p>
+<h2 id="three-ways-to-insert-css">Three Ways to Insert CSS</h2>
+<ul>
+<li>External style sheet</li>
+<li>Internal style sheet</li>
+<li>Inline style</li>
+</ul>
+<h2 id="external-style-sheet">External Style Sheet</h2>
+<p>With an external style sheet, you can change the look of an entire website by changing just one file!</p>
+<p>Each page must include a reference to the external style sheet file inside the  element. The  element goes inside the  section:</p>
+<pre><code>&lt;head&gt;
+&lt;link rel="stylesheet" type="text/css" href="mystyle.css"&gt;
+&lt;/head&gt;
+</code></pre>
 
