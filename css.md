@@ -199,4 +199,10 @@ color:  orange;
 <h2 id="color-names">Color Names</h2>
 <p>In HTML, a color can be specified by using a color name:</p>
 <p><img src="http://smashinghub.com/wp-content/uploads/2011/11/CSS-Colors1.jpg" alt="enter image description here"></p>
+<h2 id="background-color">Background Color</h2>
+<p>You can set the background color for HTML elements:<br>
+<strong>Example:</strong></p>
+<pre><code>&lt;h1 style="background-color:DodgerBlue;"&gt;Hello World&lt;/h1&gt;  
+&lt;p style="background-color:Tomato;"&gt;Lorem ipsum...&lt;/p&gt;
+</code></pre>
 
