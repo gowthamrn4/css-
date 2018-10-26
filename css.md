@@ -165,5 +165,38 @@ margin-left:  20px;
 <h2 id="multiple-style-sheets">Multiple Style Sheets</h2>
 <p>If some properties have been defined for the same selector (element) in different style sheets, the value from the last read style sheet will be used.</p>
 <h3 id="example">Example</h3>
-<p>Assume that an external style sheet has the following style for the <code>&lt;h1&gt;</code> element:</p>
+<pre><code>&lt;head&gt;  
+&lt;link rel="stylesheet"  type="text/css"  href="mystyle.css"&gt;  
+&lt;style&gt;  
+h1  {  
+color:  orange;  
+}  
+&lt;/style&gt;  
+&lt;/head&gt;
+</code></pre>
+<h2 id="cascading-order">Cascading Order</h2>
+<p>What style will be used when there is more than one style specified for an HTML element?</p>
+<p>All the styles in a page will “cascade” into a new “virtual” style sheet by the following rules, where number one has the highest priority:</p>
+<ul>
+<li>
+<ol>
+<li>Inline style (inside an HTML element)</li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>External and internal style sheets (in the head section)</li>
+</ol>
+</li>
+<li>
+<ol start="3">
+<li>Browser default</li>
+</ol>
+</li>
+</ul>
+<h1 id="css--colors">CSS  Colors</h1>
+<p>Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.</p>
+<h2 id="color-names">Color Names</h2>
+<p>In HTML, a color can be specified by using a color name:</p>
+<p><img src="http://smashinghub.com/wp-content/uploads/2011/11/CSS-Colors1.jpg" alt="enter image description here"></p>
 
