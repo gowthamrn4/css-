@@ -206,4 +206,11 @@ color:  orange;
 &lt;p style="background-color:Tomato;"&gt;Lorem ipsum...&lt;/p&gt;
 </code></pre>
 <p><img src="https://css-tricks.com/wp-content/uploads/2011/05/fullwidthbars.png" alt="enter image description here"></p>
+<h2 id="text-color">Text Color</h2>
+<p>You can set the color of text:</p>
+<pre><code>&lt;h1 style="color:Tomato;"&gt;Hello World&lt;/h1&gt;  
+&lt;p style="color:DodgerBlue;"&gt;Lorem ipsum...&lt;/p&gt;  
+&lt;p style="color:MediumSeaGreen;"&gt;Ut wisi enim...&lt;/p&gt;
+</code></pre>
+<p><img src="https://stuyhsdesign.files.wordpress.com/2015/09/external-style.png" alt="enter image description here"></p>
 
