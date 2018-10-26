@@ -156,4 +156,10 @@ margin-left:  20px;
         &lt;/style&gt;  
         &lt;/head&gt;
 </code></pre>
+<h2 id="inline-styles">Inline Styles</h2>
+<p>An inline style may be used to apply a unique style for a single element.</p>
+<p>To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property.</p>
+<p>The example below shows how to change the color and the left margin of a <code>&lt;h1&gt;</code> element:</p>
+<pre><code>&lt;h1 style="color:blue;margin-left:30px;"&gt;This is a heading&lt;/h1&gt;
+</code></pre>
 
