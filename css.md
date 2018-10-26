@@ -162,4 +162,8 @@ margin-left:  20px;
 <p>The example below shows how to change the color and the left margin of a <code>&lt;h1&gt;</code> element:</p>
 <pre><code>&lt;h1 style="color:blue;margin-left:30px;"&gt;This is a heading&lt;/h1&gt;
 </code></pre>
+<h2 id="multiple-style-sheets">Multiple Style Sheets</h2>
+<p>If some properties have been defined for the same selector (element) in different style sheets, the value from the last read style sheet will be used.</p>
+<h3 id="example">Example</h3>
+<p>Assume that an external style sheet has the following style for the <code>&lt;h1&gt;</code> element:</p>
 
