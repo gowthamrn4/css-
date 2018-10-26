@@ -61,4 +61,35 @@ color:  red;<br>
 text-align:  center;<br>
 color:  red;<br>
 }</p>
+<p>HTML elements can also refer to more than one class.</p>
+<p>In the example below, the </p><p> element will be styled according to class=“center” and to class=“large”:</p>
+<p><em><strong>Example:</strong></em><br>
+p.center {<br>
+text-align: center;<br>
+color: red;<br>
+}</p>
+<p>p.large {<br>
+font-size: 300%;<br>
+}</p>
+<p>p .class=“center large”</p>
+<h2 id="grouping-selectors">Grouping Selectors</h2>
+<p>If you have elements with the same style definitions, like this:</p>
+<p>h1 {<br>
+text-align:  center;<br>
+color:  red;<br>
+}</p>
+<p>h2 {<br>
+text-align:  center;<br>
+color:  red;<br>
+}</p>
+<p>p {<br>
+text-align:  center;<br>
+color:  red;<br>
+}</p>
+<p>(or)</p>
+<p>This is grouping selectors</p>
+<p>h1, h2, p {<br>
+text-align:  center;<br>
+color:  red;<br>
+}</p>
 
