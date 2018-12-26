@@ -1100,4 +1100,83 @@ background-color:  #eee;
 overflow:  visible;  
 }
 </code></pre>
+<h2 id="overflow-hidden">overflow: hidden</h2>
+<p>With the  <code>hidden</code>  value, the overflow is clipped, and the rest of the content is hidden:</p>
+<pre><code>div  {  
+overflow:  hidden;  
+}
+</code></pre>
+<h2 id="overflow-scroll">overflow: scroll</h2>
+<p>Setting the value to  <code>scroll</code>, the overflow is clipped and a scrollbar is added to scroll inside the box. Note that this will add a scrollbar both horizontally and vertically (even if you do not need it):</p>
+<pre><code>div {  
+overflow:  scroll;  
+}
+</code></pre>
+<h2 id="overflow-auto">overflow: auto</h2>
+<p>The  <code>auto</code>  value is similar to  <code>scroll</code>, only it add scrollbars when necessary:</p>
+<pre><code>div {  
+overflow:  auto;  
+}
+</code></pre>
+<h2 id="overflow-x-and-overflow-y">overflow-x and overflow-y</h2>
+<p>The  <code>overflow-x</code>  and  <code>overflow-y</code>  properties specifies whether to change the overflow of content just horizontally or vertically (or both):</p>
+<pre><code>div {  
+overflow-x:  hidden;  /* Hide horizontal scrollbar */  
+overflow-y:  scroll;  /* Add vertical scrollbar */  
+}
+</code></pre>
+<h1 id="css--layout---float-and-clear">CSS  Layout - float and clear</h1>
+<p>The CSS  <code>float</code>  property specifies how an element should float.</p>
+<p>The CSS  <code>clear</code>  property specifies what elements can float beside the cleared element and on which side.</p>
+<h2 id="the-float-property">The float Property</h2>
+<p>The  <code>float</code>  property is used for positioning and formatting content e.g. let an image float left to the text in a container.</p>
+<p>The  <code>float</code>  property can have one of the following values:</p>
+<ul>
+<li>left - The element floats to the left of its container</li>
+<li>right- The element floats to the right of its container</li>
+<li>none - The element does not float (will be displayed just where it occurs in the text). This is default</li>
+<li>inherit - The element inherits the float value of its parent</li>
+</ul>
+<h2 id="float-right">float: right;</h2>
+<pre><code>img {  
+float:  right;  
+}
+</code></pre>
+<h2 id="float-left">float: left;</h2>
+<pre><code>img {  
+float:  left;  
+}
+</code></pre>
+<h2 id="no-float">No float</h2>
+<pre><code>img{
+float:none
+}
+</code></pre>
+<h2 id="the-clear-propertythe--clear--property-specifies-what-elements-can-float-beside-the-cleared-element-and-on-which-side.">The clear PropertyThe  <code>clear</code>  property specifies what elements can float beside the cleared element and on which side.</h2>
+<p>The  <code>clear</code>  property can have one of the following values:</p>
+<ul>
+<li>
+<p>none - Allows floating elements on both sides. This is default</p>
+</li>
+<li>
+<p>left - No floating elements allowed on the left side</p>
+</li>
+<li>
+<p>right- No floating elements allowed on the right side</p>
+</li>
+<li>
+<p>both - No floating elements allowed on either the left or the right side</p>
+</li>
+<li>
+<p>inherit - The element inherits the clear value of its parent</p>
+<p>div {<br>
+clear:  left;<br>
+}</p>
+</li>
+</ul>
+<h2 id="the-clearfix-hack">The clearfix Hack</h2>
+<pre><code>.clearfix  {  
+overflow:  auto;  
+}
+</code></pre>
 
