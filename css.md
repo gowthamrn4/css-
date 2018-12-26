@@ -8,7 +8,7 @@
 </ol>
 <ul>
 <li>CSS Syntax</li>
-<li></li>
+<li>How to Use Css Extr</li>
 </ul>
 <h1 id="css--introduction">CSS  Introduction</h1>
 <h2 id="what-is-css">What is css?</h2>
@@ -292,6 +292,501 @@ background-image:  url("bgdesert.jpg");
 <p>Some images should be repeated only horizontally or vertically, or they will look strange, like this:</p>
 <pre><code>body {  
 background-image:  url("gradient_bg.png");  
+}
+</code></pre>
+<h1 id="css--borders">CSS  Borders</h1>
+<p>The CSS <code>border</code> properties allow you to specify the style, width, and color of an element’s border.</p>
+<h2 id="border-style">Border Style</h2>
+<ul>
+<li><code>dotted</code>  - Defines a dotted border</li>
+<li><code>dashed</code>  - Defines a dashed border</li>
+<li><code>solid</code>  - Defines a solid border</li>
+<li><code>double</code>  - Defines a double border</li>
+<li><code>groove</code>  - Defines a 3D grooved border. The effect depends on the border-color value</li>
+<li><code>ridge</code>  - Defines a 3D ridged border. The effect depends on the border-color value</li>
+<li><code>inset</code>  - Defines a 3D inset border. The effect depends on the border-color value</li>
+<li><code>outset</code>  - Defines a 3D outset border. The effect depends on the border-color value</li>
+<li><code>none</code>  - Defines no border</li>
+<li><code>hidden</code>  - Defines a hidden border</li>
+<li>
+<h2 id="border-width">Border Width</h2>
+</li>
+</ul>
+<p>The  <code>border-width</code>  property specifies the width of the four borders.</p>
+<p>The width can be set as a specific size (in px, pt, cm, em, etc) or by using one of the three pre-defined values: thin, medium, or thick.</p>
+<p>The  <code>border-width</code>  property can have from one to four values (for the top border, right border, bottom border, and the left border).</p>
+<pre><code>p.one {  
+border-style:  solid;  
+border-width:  5px;  
+}  
+  
+p.two {  
+border-style:  solid;  
+border-width:  medium;  
+}  
+  
+p.three {  
+border-style:  solid;  
+border-width:  2px 10px 4px 20px;  
+}
+</code></pre>
+<h2 id="border-color-1">Border Color</h2>
+<p>The  <code>border-color</code>  property is used to set the color of the four borders.</p>
+<p>The color can be set by:</p>
+<ul>
+<li>name - specify a color name, like “red”</li>
+<li>Hex - specify a hex value, like “#ff0000”</li>
+<li>RGB - specify a RGB value, like “rgb(255,0,0)”</li>
+<li>transparent</li>
+</ul>
+<h2 id="border---shorthand-property">Border - Shorthand Property</h2>
+<p>As you can see from the examples above, there are many properties to consider when dealing with borders.</p>
+<p>To shorten the code, it is also possible to specify all the individual border properties in one property.</p>
+<p>The  <code>border</code>  property is a shorthand property for the following individual border properties:</p>
+<ul>
+<li>
+<p><code>border-width</code></p>
+</li>
+<li>
+<p><code>border-style</code>  (required)</p>
+</li>
+<li>
+<p><code>border-color</code></p>
+<p>p {<br>
+border:  5px solid red;<br>
+}</p>
+</li>
+</ul>
+<h2 id="css-margins">CSS Margins</h2>
+<p>The CSS  <code>margin</code>  properties are used to create space around elements, outside of any defined borders.</p>
+<p>With CSS, you have full control over the margins. There are properties for setting the margin for each side of an element (top, right, bottom, and left).</p>
+<ul>
+<li>
+<p><code>margin-top</code></p>
+</li>
+<li>
+<p><code>margin-right</code></p>
+</li>
+<li>
+<p><code>margin-bottom</code></p>
+</li>
+<li>
+<p><code>margin-left</code></p>
+</li>
+<li>
+<p>All the margin properties can have the following values:</p>
+</li>
+<li>
+<p>auto - the browser calculates the margin</p>
+</li>
+<li>
+<p><em>length</em>  - specifies a margin in px, pt, cm, etc.</p>
+</li>
+<li>
+<p><em>%</em>  - specifies a margin in % of the width of the containing element</p>
+</li>
+<li>
+<p>inherit - specifies that the margin should be inherited from the parent element</p>
+</li>
+</ul>
+<p><strong>Tip:</strong>  Negative values are allowed.</p>
+<h2 id="margin---shorthand-property">Margin - Shorthand Property</h2>
+<ul>
+<li><code>margin-top</code></li>
+<li><code>margin-right</code></li>
+<li><code>margin-bottom</code></li>
+<li><code>margin-left</code></li>
+</ul>
+<p><strong>margin: 25px 50px 75px 100px;</strong></p>
+<ul>
+<li>top margin is 25px</li>
+<li>right margin is 50px</li>
+<li>bottom margin is 75px</li>
+<li>left margin is 100px</li>
+</ul>
+<h1 id="css--padding">CSS  Padding</h1>
+<p>The CSS <code>padding</code> properties are used to generate space around an element’s content, inside of any defined borders.</p>
+<ul>
+<li>
+<p><code>padding-top</code></p>
+</li>
+<li>
+<p><code>padding-right</code></p>
+</li>
+<li>
+<p><code>padding-bottom</code></p>
+</li>
+<li>
+<p><code>padding-left</code></p>
+</li>
+<li>
+<p>All the padding properties can have the following values:</p>
+</li>
+<li>
+<p><em>length</em>  - specifies a padding in px, pt, cm, etc.</p>
+</li>
+<li>
+<p><em>%</em>  - specifies a padding in % of the width of the containing element</p>
+</li>
+<li>
+<p>inherit - specifies that the padding should be inherited from the parent element</p>
+</li>
+</ul>
+<p><strong>Note:</strong>  Negative values are not allowed.</p>
+<h2 id="padding---shorthand-property">Padding - Shorthand Property</h2>
+<ul>
+<li><code>padding-top</code></li>
+<li><code>padding-right</code></li>
+<li><code>padding-bottom</code></li>
+<li><code>padding-left</code></li>
+</ul>
+<p>So, here is how it works:</p>
+<p>If the  <code>padding</code>  property has four values:</p>
+<ul>
+<li><strong>padding: 25px 50px 75px 100px;</strong>
+<ul>
+<li>top padding is 25px</li>
+<li>right padding is 50px</li>
+<li>bottom padding is 75px</li>
+<li>left padding is 100px</li>
+</ul>
+</li>
+</ul>
+<h1 id="css--height-and-width">CSS  Height and Width</h1>
+<p>The  <code>height</code>  and  <code>width</code>  properties are used to set the height and width of an element.</p>
+<p>The  <code>height</code>  and  <code>width</code>  can be set to auto (this is default. Means that the browser calculates the height and width), or be specified in  <em>length values</em>, like px, cm, etc., or in percent (%) of the containing block.</p>
+<pre><code>div {  
+height:  200px;  
+width:  50%;  
+background-color:  powderblue;  
+}
+</code></pre>
+<h2 id="setting-max-width">Setting max-width</h2>
+<p>The  <code>max-width</code>  property is used to set the maximum width of an element.</p>
+<p>The  <code>max-width</code>  can be specified in  <em>length values</em>, like px, cm, etc., or in percent (%) of the containing block, or set to none (this is default. Means that there is no maximum width).</p>
+<pre><code>div {  
+max-width:  500px;  
+height:  100px;  
+background-color:  powderblue;  
+}
+</code></pre>
+<h1 id="css--box-model">CSS  Box Model</h1>
+<p>All HTML elements can be considered as boxes. In CSS, the term “box model” is used when talking about design and layout.</p>
+<p>The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content. The image below illustrates the box model:</p>
+<ul>
+<li>
+<p><strong>Content</strong>  - The content of the box, where text and images appear</p>
+</li>
+<li>
+<p><strong>Padding</strong>  - Clears an area around the content. The padding is transparent</p>
+</li>
+<li>
+<p><strong>Border</strong>  - A border that goes around the padding and content</p>
+</li>
+<li>
+<p><strong>Margin</strong>  - Clears an area outside the border. The margin is transparent</p>
+<p>div {<br>
+width:  300px;<br>
+border:  25px solid green;<br>
+padding:  25px;<br>
+margin:  25px;<br>
+}</p>
+<h1 id="css--outline">CSS  Outline</h1>
+<p>An outline is a line that is drawn around elements, OUTSIDE the borders, to make the element “stand out”.</p>
+</li>
+<li>
+<p><code>outline-style</code></p>
+</li>
+<li>
+<p><code>outline-color</code></p>
+</li>
+<li>
+<p><code>outline-width</code></p>
+</li>
+<li>
+<p><code>outline-offset</code></p>
+</li>
+<li>
+<p><code>outline</code></p>
+</li>
+</ul>
+<h2 id="outline-style">Outline Style</h2>
+<ul>
+<li>
+<p><code>dotted</code>  - Defines a dotted outline</p>
+</li>
+<li>
+<p><code>dashed</code>  - Defines a dashed outline</p>
+</li>
+<li>
+<p><code>solid</code>  - Defines a solid outline</p>
+</li>
+<li>
+<p><code>double</code>  - Defines a double outline</p>
+</li>
+<li>
+<p><code>groove</code>  - Defines a 3D grooved outline</p>
+</li>
+<li>
+<p><code>ridge</code>  - Defines a 3D ridged outline</p>
+</li>
+<li>
+<p><code>inset</code>  - Defines a 3D inset outline</p>
+</li>
+<li>
+<p><code>outset</code>  - Defines a 3D outset outline</p>
+</li>
+<li>
+<p><code>none</code>  - Defines no outline</p>
+</li>
+<li>
+<p><code>hidden</code>  - Defines a hidden outline</p>
+<p>p.dotted {outline-style:  dotted;}<br>
+p.dashed {outline-style:  dashed;}<br>
+p.solid {outline-style:  solid;}<br>
+p.double {outline-style:  double;}<br>
+p.groove {outline-style:  groove;}<br>
+p.ridge {outline-style:  ridge;}<br>
+p.inset {outline-style:  inset;}<br>
+p.outset {outline-style:  outset;}</p>
+</li>
+</ul>
+<h2 id="outline-color">Outline Color</h2>
+<p>The  <code>outline-color</code>  property is used to set the color of the outline.</p>
+<ul>
+<li>name - specify a color name, like “red”</li>
+<li>RGB - specify a RGB value, like “rgb(255,0,0)”</li>
+<li>Hex - specify a hex value, like “#ff0000”</li>
+<li>invert - performs a color inversion (which ensures that the outline is visible, regardless of color background)</li>
+</ul>
+<h2 id="outline-width">Outline Width</h2>
+<p>The <code>outline-width</code> property specifies the width of the outline, and can have one of the following values:</p>
+<ul>
+<li>thin (typically 1px)</li>
+<li>medium (typically 3px)</li>
+<li>thick (typically 5px)</li>
+<li>A specific size (in px, pt, cm, em, etc)</li>
+</ul>
+<h1 id="css--text">CSS  Text</h1>
+<p>The  <code>color</code>  property is used to set the color of the text. The color is specified by:</p>
+<ul>
+<li>
+<p>a color name - like “red”</p>
+</li>
+<li>
+<p>a HEX value - like “#ff0000”</p>
+</li>
+<li>
+<p>an RGB value - like “rgb(255,0,0)”</p>
+<ul>
+<li>body {<br>
+color:  blue;<br>
+}</li>
+</ul>
+<p>h1 {<br>
+color:  green;<br>
+}</p>
+</li>
+</ul>
+<h2 id="text-alignment">Text Alignment</h2>
+<p>The  <code>text-align</code>  property is used to set the horizontal alignment of a text.</p>
+<p>A text can be left or right aligned, centered, or justified.</p>
+<pre><code>h1 {  
+text-align:  center;  
+}  
+  
+h2 {  
+text-align:  left;  
+}  
+  
+h3 {  
+text-align:  right;  
+}
+</code></pre>
+<h2 id="text-decoration">Text Decoration</h2>
+<p>The  <code>text-decoration</code>  property is used to set or remove decorations from text.</p>
+<p>The value  <code>text-decoration: none;</code>  is often used to remove underlines from links:</p>
+<pre><code>a {  
+text-decoration:  none;  
+}
+</code></pre>
+<h2 id="text-transformation">Text Transformation</h2>
+<p>The  <code>text-transform</code>  property is used to specify uppercase and lowercase letters in a text.</p>
+<p>It can be used to turn everything into uppercase or lowercase letters, or capitalize the first letter of each word:</p>
+<pre><code>p.uppercase {  
+text-transform:  uppercase;  
+}  
+  
+p.lowercase {  
+text-transform:  lowercase;  
+}  
+  
+p.capitalize {  
+text-transform:  capitalize;  
+}
+</code></pre>
+<h2 id="text-indentation">Text Indentation</h2>
+<p>The  <code>text-indent</code>  property is used to specify the indentation of the first line of a text:</p>
+<pre><code>p {  
+text-indent:  50px;  
+}
+</code></pre>
+<h2 id="letter-spacing">Letter Spacing</h2>
+<p>The  <code>letter-spacing</code>  property is used to specify the space between the characters in a text.</p>
+<p>The following example demonstrates how to increase or decrease the space between characters:</p>
+<pre><code>h1 {  
+letter-spacing:  3px;  
+}  
+  
+h2 {  
+letter-spacing:  -3px;  
+}
+</code></pre>
+<h2 id="line-height">Line Height</h2>
+<p>The  <code>line-height</code>  property is used to specify the space between lines:</p>
+<pre><code>p.small {  
+line-height:  0.8;  
+}  
+  
+p.big {  
+line-height:  1.8;  
+}
+</code></pre>
+<h2 id="text-direction">Text Direction</h2>
+<p>The  <code>direction</code>  property is used to change the text direction of an element:</p>
+<pre><code>p {  
+direction:  rtl;  
+}
+</code></pre>
+<h2 id="word-spacing">Word Spacing</h2>
+<p>The  <code>word-spacing</code>  property is used to specify the space between the words in a text.</p>
+<p>The following example demonstrates how to increase or decrease the space between words:</p>
+<pre><code>h1 {  
+word-spacing:  10px;  
+}  
+  
+h2 {  
+word-spacing:  -5px;  
+}
+</code></pre>
+<h2 id="text-shadow">Text Shadow</h2>
+<p>The  <code>text-shadow</code>  property adds shadow to text.</p>
+<p>The following example specifies the position of the horizontal shadow (3px), the position of the vertical shadow (2px) and the color of the shadow (red):</p>
+<pre><code>h1 {  
+text-shadow:  3px 2px red;  
+}
+</code></pre>
+<h1 id="css--fonts">CSS  Fonts</h1>
+<p>The CSS font properties define the font family, boldness, size, and the style of a text.</p>
+<h2 id="css-font-families">CSS Font Families</h2>
+<ul>
+<li>
+<p><strong>generic family</strong>  - a group of font families with a similar look (like “Serif” or “Monospace”)</p>
+</li>
+<li>
+<p><strong>font family</strong>  - a specific font family (like “Times New Roman” or “Arial”)</p>
+</li>
+<li>
+<h2 id="font-family">Font Family</h2>
+<pre><code>p {  
+  font-family:  "Times New Roman", Times, serif;  
+  }
+</code></pre>
+</li>
+</ul>
+<h2 id="font-style">Font Style</h2>
+<p>The  <code>font-style</code>  property is mostly used to specify italic text.</p>
+<p>This property has three values:</p>
+<ul>
+<li>normal - The text is shown normally</li>
+<li>italic - The text is shown in italics</li>
+<li>oblique - The text is “leaning” (oblique is very similar to italic, but less supported)</li>
+</ul>
+<h2 id="font-size">Font Size</h2>
+<p>The <code>font-size</code> property sets the size of the text.</p>
+<pre><code>h1 {  
+font-size:  40px;  
+}  
+  
+h2 {  
+font-size:  30px;  
+}  
+  
+p {  
+font-size:  14px;  
+}
+</code></pre>
+<h2 id="set-font-size-with-em">Set Font Size With Em</h2>
+<p>To allow users to resize the text (in the browser menu), many developers use em instead of pixels.</p>
+<pre><code>h1 {  
+font-size:  2.5em;  /* 40px/16=2.5em */  
+}  
+  
+h2 {  
+font-size:  1.875em;  /* 30px/16=1.875em */  
+}  
+  
+p {  
+font-size:  0.875em;  /* 14px/16=0.875em */  
+}
+</code></pre>
+<h1 id="css--icons">CSS  Icons</h1>
+<h2 id="font-awesome-icons">Font Awesome Icons</h2>
+<p>o use the Font Awesome icons, add the following line inside the  <code>&lt;head&gt;</code>  section of your HTML page:</p>
+<p><code>&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"&gt;</code></p>
+<h2 id="bootstrap-icons">Bootstrap Icons</h2>
+<p>To use the Bootstrap glyphicons, add the following line inside the  <code>&lt;head&gt;</code>  section of your HTML page:</p>
+<p><code>&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"&gt;</code></p>
+<h2 id="google-icons">Google Icons</h2>
+<p>To use the Google icons, add the following line inside the  <code>&lt;head&gt;</code>  section of your HTML page:</p>
+<p><code>&lt;link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"&gt;</code></p>
+<h1 id="css--links">CSS  Links</h1>
+<h2 id="styling-links">Styling Links</h2>
+<p>Links can be styled with any CSS property (e.g.  <code>color</code>,  <code>font-family</code>,  <code>background</code>, etc.).</p>
+<pre><code>a {  
+color:  hotpink;  
+}
+</code></pre>
+<ul>
+<li>
+<p><code>a:link</code>  - a normal, unvisited link</p>
+</li>
+<li>
+<p><code>a:visited</code>  - a link the user has visited</p>
+</li>
+<li>
+<p><code>a:hover</code>  - a link when the user mouses over it</p>
+</li>
+<li>
+<p><code>a:active</code>  - a link the moment it is clicked</p>
+<p>/* unvisited link */<br>
+a:link {<br>
+color:  red;<br>
+}</p>
+<p>/* visited link */<br>
+a:visited {<br>
+color:  green;<br>
+}</p>
+<p>/* mouse over link */<br>
+a:hover {<br>
+color:  hotpink;<br>
+}</p>
+<p>/* selected link */<br>
+a:active {<br>
+color:  blue;<br>
+}</p>
+</li>
+</ul>
+<h2 id="text-decoration-1">Text Decoration</h2>
+<p>The  <code>text-decoration</code>  property is mostly used to remove underlines from links:</p>
+<pre><code>a:link {  
+text-decoration:  none;  
+}
+</code></pre>
+<h2 id="background-color-2">Background Color</h2>
+<p>The <code>background-color</code> property can be used to specify a background color for links:</p>
+<pre><code>a:link {  
+background-color:  yellow;  
 }
 </code></pre>
 
