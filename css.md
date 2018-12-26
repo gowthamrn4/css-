@@ -789,4 +789,315 @@ text-decoration:  none;
 background-color:  yellow;  
 }
 </code></pre>
+<h1 id="css--lists">CSS  Lists</h1>
+<h2 id="unordered-lists">Unordered Lists:</h2>
+<ul>
+<li>
+<p>Coffee</p>
+</li>
+<li>
+<p>Tea</p>
+</li>
+<li>
+<p>Coca Cola</p>
+</li>
+<li>
+<p>Coffee</p>
+</li>
+<li>
+<p>Tea</p>
+</li>
+<li>
+<p>Coca Cola</p>
+</li>
+</ul>
+<h2 id="ordered-lists">Ordered Lists:</h2>
+<ol>
+<li>
+<p>Coffee</p>
+</li>
+<li>
+<p>Tea</p>
+</li>
+<li>
+<p>Coca Cola</p>
+</li>
+<li>
+<p>Coffee</p>
+</li>
+<li>
+<p>Tea</p>
+</li>
+<li>
+<p>Coca Cola</p>
+</li>
+<li>
+<p>Coca Cola</p>
+</li>
+</ol>
+<hr>
+<h2 id="html-lists-and-css-list-properties">HTML Lists and CSS List Properties</h2>
+<ul>
+<li>unordered lists (<ul>) - the list items are marked with bullets</ul></li>
+<li>ordered lists (<ol>) - the list items are marked with numbers or letters</ol></li>
+</ul>
+<p>The CSS list properties allow you to:</p>
+<ul>
+<li>Set different list item markers for ordered lists</li>
+<li>Set different list item markers for unordered lists</li>
+<li>Set an image as the list item marker</li>
+<li>Add background colors to lists and list items</li>
+</ul>
+<h2 id="different-list-item-markers">Different List Item Markers</h2>
+<p>The  <code>list-style-type</code>  property specifies the type of list item marker.</p>
+<pre><code>ul.a {  
+list-style-type:  circle;  
+}  
+  
+ul.b {  
+list-style-type:  square;  
+}  
+  
+ol.c {  
+list-style-type:  upper-roman;  
+}  
+  
+ol.d {  
+list-style-type:  lower-alpha;  
+}
+</code></pre>
+<h2 id="an-image-as-the-list-item-marker">An Image as The List Item Marker</h2>
+<p>The  <code>list-style-image</code>  property specifies an image as the list item marker:</p>
+<pre><code>ul {  
+list-style-image:  url('sqpurple.gif');  
+}
+</code></pre>
+<h2 id="list---shorthand-property">List - Shorthand property</h2>
+<p>The  <code>list-style</code>  property is a shorthand property. It is used to set all the list properties in one declaration:</p>
+<pre><code>ul {  
+list-style:  square inside url("sqpurple.gif");  
+}
+</code></pre>
+<h2 id="styling-list-with-colors">Styling List With Colors</h2>
+<p>We can also style lists with colors, to make them look a little more interesting.</p>
+<p>Anything added to the </p><ol> or <ul> tag, affects the entire list, while properties added to the <li> tag will affect the individual list items:</li></ul></ol><p></p>
+<pre><code>ol {  
+background:  #ff9999;  
+padding:  20px;  
+}  
+  
+ul {  
+background:  #3399ff;  
+padding:  20px;  
+}  
+  
+ol li {  
+background:  #ffe5e5;  
+padding:  5px;  
+margin-left:  35px;  
+}  
+  
+ul li {  
+background:  #cce5ff;  
+margin:  5px;  
+}
+</code></pre>
+<h1 id="css--tables">CSS  Tables</h1>
+<h2 id="table-borders">Table Borders</h2>
+<p>To specify table borders in CSS, use the  <code>border</code>  property.</p>
+<p>The example below specifies a black border for <code>&lt;table&gt;, &lt;th&gt;, and &lt;td&gt; elements:</code></p>
+<pre><code>  table {  
+border-collapse:  collapse;  
+}  
+  
+table, th, td {  
+border:  1px solid black;  
+}
+</code></pre>
+<h2 id="table-width-and-height">Table Width and Height</h2>
+<p>Width and height of a table are defined by the <code>width</code> and <code>height</code> properties.</p>
+<pre><code>table {  
+width:  100%;  
+}  
+  
+th {  
+height:  50px;  
+}
+</code></pre>
+<h2 id="horizontal-alignment">Horizontal Alignment</h2>
+<p>The <code>text-align</code> property sets the horizontal alignment (like left, right, or center) of the content in  or .</p>
+<pre><code>th {  
+text-align:  left;  
+}
+</code></pre>
+<h2 id="vertical-alignment">Vertical Alignment</h2>
+<p>The <code>vertical-align</code> property sets the vertical alignment (like top, bottom, or middle) of the content in  or .</p>
+<pre><code>td {  
+height:  50px;  
+vertical-align:  bottom;  
+}
+</code></pre>
+<h2 id="table-padding">Table Padding</h2>
+<p>To control the space between the border and the content in a table, use the  <code>padding</code>  property on  and  elements:</p>
+<pre><code>th, td {  
+padding:  15px;  
+text-align:  left;  
+}
+</code></pre>
+<h2 id="horizontal-dividers">Horizontal Dividers</h2>
+<pre><code>th, td {  
+border-bottom:  1px solid #ddd;  
+}
+</code></pre>
+<h2 id="hoverable-table">Hoverable Table</h2>
+<pre><code>tr:hover {background-color:  #f5f5f5;}
+</code></pre>
+<h2 id="striped-tables">Striped Tables</h2>
+<pre><code>tr:nth-child(even) {background-color:  #f2f2f2;}
+</code></pre>
+<h2 id="table-color">Table Color</h2>
+<pre><code>th {  
+background-color:  #4CAF50;  
+color:  white;  
+}
+</code></pre>
+<h2 id="responsive-table">Responsive Table</h2>
+<p>A responsive table will display a horizontal scroll bar if the screen is too small to display the full content:</p>
+<pre><code>&lt;div style="overflow-x:auto;"&gt;  
+  
+&lt;table&gt;  
+... table content ...  
+&lt;/table&gt;  
+  
+&lt;/div&gt;
+</code></pre>
+<h1 id="css--layout---the-display--property">CSS  Layout - The display  Property</h1>
+<p>The <code>display</code> property is the most important CSS property for controlling layout.</p>
+<h2 id="the-display-property">The display Property</h2>
+<p>The  <code>display</code>  property specifies if/how an element is displayed.</p>
+<p>Every HTML element has a default display value depending on what type of element it is. The default display value for most elements is  <code>block</code>  or  <code>inline</code></p>
+<h2 id="block-level-elements">Block-level Elements</h2>
+<h2 id="a-block-level-element-always-starts-on-a-new-line-and-takes-up-the-full-width-available-stretches-out-to-the-left-and-right-as-far-as-it-can.">A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can).</h2>
+<pre><code>&lt;div&gt;
+-   &lt;h1&gt; - &lt;h6&gt;
+-   &lt;p&gt;
+-   &lt;form&gt;
+-   &lt;header&gt;
+-   &lt;footer&gt;
+-   &lt;section&gt;
+</code></pre>
+<h2 id="inline-elements">Inline Elements</h2>
+<p>An inline element does not start on a new line and only takes up as much width as necessary.</p>
+<p>This is  an inline <span> element inside  a paragraph.</span></p>
+<p>Examples of inline elements:</p>
+<pre><code>-   &lt;span&gt;
+-   &lt;a&gt;
+-   &lt;img&gt;
+</code></pre>
+<h2 id="display-none">Display: none;</h2>
+<p><code>display: none;</code>  is commonly used with JavaScript to hide and show elements without deleting and recreating them. Take a look at our last example on this page if you want to know how this can be achieved.</p>
+<p>The  <code>&lt;script&gt;</code>  element uses  <code>display: none;</code>  as default.</p>
+<h1 id="css--layout---width-and-max-width">CSS  Layout - width and max-width</h1>
+<h2 id="using-width-max-width-and-margin-auto">Using width, max-width and margin: auto;</h2>
+<p>As mentioned in the previous chapter; a block-level element always takes up the full width available (stretches out to the left and right as far as it can).</p>
+<pre><code>div.ex1 {  
+width:  500px;  
+margin:  auto;  
+border:  3px solid #73AD21;  
+}  
+  
+div.ex2 {  
+max-width:  500px;  
+margin:  auto;  
+border:  3px solid #73AD21;  
+}
+</code></pre>
+<h1 id="css--layout---the-position--property">CSS  Layout - The position  Property</h1>
+<p>The  <code>position</code>  property specifies the type of positioning method used for an element (static, relative, fixed, absolute or sticky).</p>
+<hr>
+<h2 id="the-position-property">The position Property</h2>
+<p>The  <code>position</code>  property specifies the type of positioning method used for an element.</p>
+<p>There are five different position values:</p>
+<ul>
+<li><code>static</code></li>
+<li><code>relative</code></li>
+<li><code>fixed</code></li>
+<li><code>absolute</code></li>
+<li><code>sticky</code></li>
+</ul>
+<h2 id="position-static">position: static;</h2>
+<p>HTML elements are positioned static by default.</p>
+<p>Static positioned elements are not affected by the top, bottom, left, and right properties.</p>
+<p>An element with  <code>position: static;</code>  is not positioned in any special way; it is always positioned according to the normal flow of the page:</p>
+<pre><code>div.static {  
+position:  static;  
+border:  3px solid #73AD21;  
+}
+</code></pre>
+<h2 id="position-relative">position: relative;</h2>
+<p>An element with  <code>position: relative;</code>  is positioned relative to its normal position.</p>
+<pre><code>div.relative {  
+position:  relative;  
+left:  30px;  
+border:  3px solid #73AD21;  
+}
+</code></pre>
+<h2 id="position-fixed">position: fixed;</h2>
+<p>An element with  <code>position: fixed;</code>  is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.</p>
+<pre><code>div.fixed {  
+position:  fixed;  
+bottom:  0;  
+right:  0;  
+width:  300px;  
+border:  3px solid #73AD21;  
+}
+</code></pre>
+<h2 id="position-absolute">position: absolute;</h2>
+<p>An element with  <code>position: absolute;</code>  is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).</p>
+<pre><code>div.relative {  
+position:  relative;  
+width:  400px;  
+height:  200px;  
+border:  3px solid #73AD21;  
+}  
+  
+div.absolute {  
+position:  absolute;  
+top:  80px;  
+right:  0;  
+width:  200px;  
+height:  100px;  
+border:  3px solid #73AD21;  
+}
+</code></pre>
+<h2 id="position-sticky">position: sticky;</h2>
+<p>An element with <code>position: sticky;</code> is positioned based on the user’s scroll position.</p>
+<pre><code>div.sticky {  
+position:  -webkit-sticky;  /* Safari */  
+position:  sticky;  
+top:  0;  
+background-color:  green;  
+border:  2px solid #4CAF50;  
+}
+</code></pre>
+<h1 id="css--layout---overflow">CSS  Layout - Overflow</h1>
+<p>The CSS <code>overflow</code> property controls what happens to content that is too big to fit into an area.</p>
+<h2 id="css-overflow">CSS Overflow</h2>
+<p>The  <code>overflow</code>  property specifies whether to clip content or to add scrollbars when the content of an element is too big to fit in a specified area.</p>
+<p>The  <code>overflow</code>  property has the following values:</p>
+<ul>
+<li><code>visible</code>  - Default. The overflow is not clipped. It renders outside the element’s box</li>
+<li><code>hidden</code>  - The overflow is clipped, and the rest of the content will be invisible</li>
+<li><code>scroll</code>  - The overflow is clipped, but a scrollbar is added to see the rest of the content</li>
+<li><code>auto</code>  - If overflow is clipped, a scrollbar should be added to see the rest of the content</li>
+</ul>
+<h2 id="overflow-visible">overflow: visible</h2>
+<p>By default, the overflow is  <code>visible</code>, meaning that it is not clipped and it renders outside the element’s box:</p>
+<pre><code>div {  
+width:  200px;  
+height:  50px;  
+background-color:  #eee;  
+overflow:  visible;  
+}
+</code></pre>
 
